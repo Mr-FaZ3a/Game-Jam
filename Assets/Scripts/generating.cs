@@ -25,7 +25,7 @@ public class generating : MonoBehaviour
     }
     IEnumerator generate(){
         Instantiate(
-            objects[Random.Range(0, 2)],
+            objects[Random.Range(0, 3)],
             new Vector2(
                 transform.position.x,
                 transform.position.y
