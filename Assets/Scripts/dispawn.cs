@@ -16,6 +16,7 @@ public class dispawn : MonoBehaviour
         
     }
     void OnTriggerExit2D(Collider2D col){
-        Destroy(col.gameObject);
+        if (col.gameObject.tag == "enemy")
+            Destroy(col.gameObject);
     }
 }

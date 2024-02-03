@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class generating : MonoBehaviour
 {
-    public List<AudioSource> musics;
     public List<GameObject> objects;
     bool spawning = false;
     float chance = 0f;
@@ -15,7 +14,6 @@ public class generating : MonoBehaviour
     {
 
     }
-
     // Update is called once per frame
     void Update(){
         if (!spawning){
@@ -33,9 +31,8 @@ public class generating : MonoBehaviour
             Quaternion.identity
 
         );
-        while (System.Math.Round(Random.Range(0f, chance)) == 1){
+        while (System.Math.Round(Random.Range(0f, chance)) == 1)
             n++;
-        }
         yield return new WaitForSeconds(time);
         time -= 0.1f;
         chance = chance * 1.5f + 0.05f;
