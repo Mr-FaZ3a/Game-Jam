@@ -35,7 +35,6 @@ public class play : MonoBehaviour
         }
         if (col.gameObject.tag == "enemy" && n > 0){
             n--;
-            Debug.Log("working perFectly");
             Physics2D.IgnoreCollision(GetComponent<Collider2D>(), col.collider);
             Color initcol = GetComponent<SpriteRenderer>().color;
             StartCoroutine(damaging(initcol));

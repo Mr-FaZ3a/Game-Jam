@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class movement : MonoBehaviour
 {
+    public GameObject Player;
     float speed;
     // Start is called before the first frame update
     void Awake()
@@ -12,7 +13,6 @@ public class movement : MonoBehaviour
     void Start()
     {
         
-
         speed = Random.Range(2f, 4f);
     }
 

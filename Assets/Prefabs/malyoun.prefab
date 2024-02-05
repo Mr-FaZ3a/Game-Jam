@@ -105,6 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06b1f8caf51e1d429902f6fbb844d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1745959286483469137, guid: 7bc8092e7280e9041abfd807c08d7290, type: 3}
 --- !u!50 &-3117067862159167098
 Rigidbody2D:
   serializedVersion: 4
@@ -339,6 +340,6 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.5389845}
-  m_Size: {x: 8.00782, y: 9.78203}
+  m_Offset: {x: 0.03593515, y: -0.3481206}
+  m_Size: {x: 5.4925637, y: 8.00782}
   m_Direction: 0

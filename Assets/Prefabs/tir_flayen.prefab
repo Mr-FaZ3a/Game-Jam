@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5062733803123336385}
   - component: {fileID: -524446780059647971}
   - component: {fileID: 3913389638172144023}
-  - component: {fileID: 3150130017353746751}
+  - component: {fileID: 3049166400589639588}
   m_Layer: 0
   m_Name: tir_flayen
   m_TagString: enemy
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: -999432649
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -8730539845507631773, guid: 3cb796ff41ce1fc439d6fc9dec35b099, type: 3}
+  m_Sprite: {fileID: -6334748188925405803, guid: ed447100b78e23f458d0f7517d48d7e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,6 +104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06b1f8caf51e1d429902f6fbb844d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1745959286483469137, guid: 7bc8092e7280e9041abfd807c08d7290, type: 3}
 --- !u!50 &-3117067862159167098
 Rigidbody2D:
   serializedVersion: 4
@@ -174,7 +175,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 0.8071673
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -266,8 +267,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 41fc5faff9b84264582bdc6f773d5dc6, type: 3}
   - {fileID: 8300000, guid: 67a2df0a42becb844971b431ef6b1b26, type: 3}
   - {fileID: 8300000, guid: c958324f3e9bf5a45b633e2cba50a0b6, type: 3}
---- !u!70 &3150130017353746751
-CapsuleCollider2D:
+--- !u!61 &3049166400589639588
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -300,6 +301,15 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.35, y: 0.54}
-  m_Direction: 0
+  m_Offset: {x: 0.015715271, y: -0.1309602}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.24}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.5685695, y: 0.35524493}
+  m_EdgeRadius: 0

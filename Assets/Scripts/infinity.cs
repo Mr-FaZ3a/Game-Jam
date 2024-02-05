@@ -9,6 +9,9 @@ public class infinity : MonoBehaviour
     float initpos;
     float posx;
     // Start is called before the first frame update
+    void Awake(){
+        Physics2D.IgnoreLayerCollision(6,7);
+    }
     void Start()
     {
         posx = transform.position.x;
@@ -18,14 +21,13 @@ public class infinity : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (obj.transform.position.x > 0f){
-            transform.position = new Vector2(transform.position.x - speed, transform.position.y);
-            obj.transform.position = new Vector2(obj.transform.position.x - speed, obj.transform.position.y);
-        }
-        else{
+        GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0);
+        obj.GetComponent<Rigidbody2D>().velocity = new Vector2(- speed , 0);
+        if (!(obj.transform.position.x > 0f)){
             transform.position = new Vector2(posx, transform.position.y);
-            obj.transform.position = new Vector2(initpos, obj.transform.position.y  );
+            obj.transform.position = new Vector2(initpos, obj.transform.position.y);
         }
     }
+
 
 }
