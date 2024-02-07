@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -3117067862159167098}
   - component: {fileID: -5062733803123336385}
   - component: {fileID: -524446780059647971}
-  - component: {fileID: 3913389638172144023}
   - component: {fileID: 3049166400589639588}
-  m_Layer: 0
+  - component: {fileID: 3913389638172144023}
+  m_Layer: 8
   m_Name: tir_flayen
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 1
   m_GravityScale: 5
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: e9ed31b4bfb2cc8418fe624cfbe14eb9, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -251,22 +251,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &3913389638172144023
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 926559945944991777}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeb2affa575bdfd4abbc314ac176b427, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sounds:
-  - {fileID: 8300000, guid: 41fc5faff9b84264582bdc6f773d5dc6, type: 3}
-  - {fileID: 8300000, guid: 67a2df0a42becb844971b431ef6b1b26, type: 3}
-  - {fileID: 8300000, guid: c958324f3e9bf5a45b633e2cba50a0b6, type: 3}
 --- !u!61 &3049166400589639588
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -313,3 +297,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5685695, y: 0.35524493}
   m_EdgeRadius: 0
+--- !u!114 &3913389638172144023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 926559945944991777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeb2affa575bdfd4abbc314ac176b427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - {fileID: 8300000, guid: 41fc5faff9b84264582bdc6f773d5dc6, type: 3}
+  - {fileID: 8300000, guid: 67a2df0a42becb844971b431ef6b1b26, type: 3}
+  - {fileID: 8300000, guid: c958324f3e9bf5a45b633e2cba50a0b6, type: 3}

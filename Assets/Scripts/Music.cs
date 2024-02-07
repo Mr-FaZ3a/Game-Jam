@@ -16,14 +16,14 @@ public class Music : MonoBehaviour {
     void Update () {
         
     }
-    void OnCollisionEnter2D(Collision2D col){
-        if (col.gameObject.name == "Player"){
+    void OnTriggerEnter2D(Collider2D col){
+        if (col.gameObject.name == "Hit"){
             AudioSource.PlayClipAtPoint(sounds[1], transform.position);
             touch = true;
         }
     }
     void OnTriggerExit2D(Collider2D col){
-        if (col.gameObject.name == "Player" && !touch)
+        if (col.gameObject.name == "Trigger" && !touch)
             AudioSource.PlayClipAtPoint(sounds[2], transform.position);
     }
 }

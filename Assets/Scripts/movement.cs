@@ -12,24 +12,22 @@ public class movement : MonoBehaviour
     }
     void Start()
     {
-        
         speed = Random.Range(2f, 4f);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(- speed, 0f);
+        Physics2D.IgnoreLayerCollision(8, 8);
+        Physics2D.IgnoreLayerCollision(8, 10);
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(-speed, 0f);
     }
-    void OnCollisionEnter2D (Collision2D collision) 
+    void OnTriggerEnter2D(Collider2D col)
     {
-    
-        if (collision.gameObject.tag == "enemy" || collision.gameObject.name =="Square" || collision.gameObject.name == "Square1") {
-            Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+        if (col.gameObject.name == "Hit")
+        {
+            Debug.Log("hello world");
         }
-        
-
-        
     }
         
 

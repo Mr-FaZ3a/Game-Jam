@@ -7,7 +7,7 @@ public class suicide : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GetComponent<Rigidbody2D>().velocity = new Vector2(-1,0);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(-4,0);
         
     }
 
