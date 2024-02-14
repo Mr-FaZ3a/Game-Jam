@@ -169,7 +169,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixilart-drawing_2_0: 2139162446268395891
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
