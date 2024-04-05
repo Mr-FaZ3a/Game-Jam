@@ -289,13 +289,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      ya_marwen_sprite_0: -8730539845507631773
-      ya_marwen_sprite_1: -6183649035046343513
-      ya_marwen_sprite_2: 3414543222868673365
-      ya_marwen_sprite_3: 1447352373864556478
-      ya_marwen_sprite_4: -3271253496375526106
-      ya_marwen_sprite_5: 5292117079108693217
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

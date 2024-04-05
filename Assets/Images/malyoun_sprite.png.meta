@@ -385,17 +385,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      malyoun_sprite_0: -3725971855908066982
-      malyoun_sprite_1: -6607389019558337909
-      malyoun_sprite_2: -2347019056125007698
-      malyoun_sprite_3: 3368897170076416093
-      malyoun_sprite_4: -4304557356345930894
-      malyoun_sprite_5: -3515118947939498013
-      malyoun_sprite_6: -6621413207935188336
-      malyoun_sprite_7: 3721355131802981938
-      malyoun_sprite_8: -4865734045451854255
-      malyoun_sprite_9: 6739700681656510703
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

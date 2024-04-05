@@ -7,7 +7,6 @@ TagManager:
   - enemy
   - Ground
   - Buildings
-  - trees
   layers:
   - Default
   - TransparentFX
@@ -50,7 +49,4 @@ TagManager:
     locked: 0
   - name: background
     uniqueID: 3295534647
-    locked: 0
-  - name: objects
-    uniqueID: 2664290709
     locked: 0
