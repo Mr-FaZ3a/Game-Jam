@@ -24,6 +24,7 @@ public class play : MonoBehaviour
     void Update()
     {
         float move = Input.GetAxisRaw("Horizontal") * speed * Time.deltaTime;
+        GetComponent<Rigidbody2D>().velocity = new Vector2(move, GetComponent<Rigidbody2D>().velocity.y);
         transform.Translate(new Vector2(move,0));
         if (Input.GetKeyDown(up) && j == false){
             body.AddForce(Vector2.up * force);
@@ -35,15 +36,11 @@ public class play : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.tag == "Ground"){
+        if (col.gameObject.tag == "Ground" && j){
+            Debug.Log("hello world");
             j = false;
         }
 
     }
-    // void OnCollisionExit2D(Collision2D col){
-    //     if (col.gameObject.tag == "Ground"){
-    //         Debug.Log("wtf");
-    //         j = true;
-    //     }
-    // }
+    
 }

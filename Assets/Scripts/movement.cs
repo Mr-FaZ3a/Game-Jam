@@ -22,14 +22,6 @@ public class movement : MonoBehaviour
     void Update()
     {
     }
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        if (col.gameObject.name == "Hit")
-        {
-            Debug.Log("hello world");
-        }
-    }
-        
 
 
 }
